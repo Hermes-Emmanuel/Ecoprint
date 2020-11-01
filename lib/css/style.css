@@ -1,0 +1,65 @@
+@import url("root.css");
+@import url("styleQuery.css");
+.uk-section {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uk-section header {
+    min-width: 400px;
+    max-width: 400px;
+}
+
+.uk-section header h1 {
+    font-size: 3em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.uk-section header p {
+    font-size: .9em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.ecoBtn {
+    border-radius: 24px;
+    border: 2px solid;
+}
+
+.objCircle {
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.uk-text-center h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+article {
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article header {
+    margin: 20px;
+}
+
+article header h1 {
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.shape {
+    width: 55em;
+    height: 400px;
+    background: var(--blue);
+}

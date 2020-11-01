@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --green: #1DD1A1;
+    --red: #FF6B6B;
+    --blue: #5F27CD;
+    --yellow: #FECA57;
+    --green-hover: #10AC84;
+    --red-hover: #EE5253;
+    --blue-hover: #341F97;
+    --yellow-hover: #FF9F43;
+}
+
+.bgPrimary {
+    background: var(--green);
+}
+
+.bgRed {
+    background: var(--red);
+}
+
+.bgBlue {
+    background: var(--blue);
+}
+
+.bgYellow {
+    background: var(--yellow);
+}
+
+.bgPrimary-hover {
+    background: var(--green-hover);
+}
+
+.bgRed-hover {
+    background: var(--red-hover);
+}
+
+.bgBlue-hover {
+    background: var(--blue-hover);
+}
+
+.bgYellow-hover {
+    background: var(--yellow-hover);
+}

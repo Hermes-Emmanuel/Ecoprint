@@ -1,0 +1,31 @@
+@media (max-width: 500px) {
+    .uk-navbar-right {
+        display: none;
+    }
+    .objCircle {
+        display: none;
+    }
+    .uk-section {
+        justify-content: center;
+        align-items: center;
+    }
+    .uk-section header {
+        min-width: 400px;
+        max-width: 400px;
+        text-align: center;
+    }
+    .uk-section header h1 {
+        font-size: 3em;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    .uk-text-center h2 {
+        font-size: medium;
+        font-weight: 700;
+    }
+    .shape {
+        width: 20px;
+        height: 400px;
+        background: var(--blue);
+    }
+}
