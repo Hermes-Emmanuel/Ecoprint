@@ -45,3 +45,19 @@
 .bgYellow-hover {
     background: var(--yellow-hover);
 }
+
+.primary {
+    color: var(--green);
+}
+
+.red {
+    color: var(--red);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.yellow {
+    color: var(--yellow);
+}

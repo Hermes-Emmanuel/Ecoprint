@@ -1,20 +1,20 @@
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .uk-navbar-right {
         display: none;
     }
     .objCircle {
         display: none;
     }
-    .uk-section {
-        justify-content: center;
+    .section {
+        justify-content: center!important;
         align-items: center;
     }
-    .uk-section header {
+    .section header {
         min-width: 400px;
         max-width: 400px;
         text-align: center;
     }
-    .uk-section header h1 {
+    .section header h1 {
         font-size: 3em;
         font-weight: 800;
         text-transform: uppercase;
@@ -23,9 +23,10 @@
         font-size: medium;
         font-weight: 700;
     }
-    .shape {
-        width: 20px;
-        height: 400px;
-        background: var(--blue);
+    .shape img {
+        padding: 10px;
+    }
+    .services {
+        margin: auto;
     }
 }

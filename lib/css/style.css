@@ -1,22 +1,22 @@
 @import url("root.css");
 @import url("styleQuery.css");
-.uk-section {
+.section {
     justify-content: space-between;
     align-items: center;
 }
 
-.uk-section header {
+.section header {
     min-width: 400px;
     max-width: 400px;
 }
 
-.uk-section header h1 {
+.section header h1 {
     font-size: 3em;
     font-weight: 800;
     text-transform: uppercase;
 }
 
-.uk-section header p {
+.section header p {
     font-size: .9em;
     font-weight: 300;
     text-transform: uppercase;
@@ -48,10 +48,6 @@ article {
     justify-content: space-between;
 }
 
-article header {
-    margin: 20px;
-}
-
 article header h1 {
     font-size: 2em;
     font-weight: 800;
@@ -59,7 +55,15 @@ article header h1 {
 }
 
 .shape {
-    width: 55em;
-    height: 400px;
-    background: var(--blue);
+    border-radius: 12px;
+    width: 600px;
+}
+
+.shape img {
+    padding: 20px;
+    /* transform: translateX(-180px); */
+}
+
+.services article {
+    padding: 10px 0;
 }

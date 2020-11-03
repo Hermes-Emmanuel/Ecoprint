@@ -32,10 +32,10 @@
             </div>
         </div>
 
-        <section class="uk-section uk-margin uk-flex uk-flex-row">
-            <header>
+        <section class="section uk-section uk-flex uk-flex-row" uk-height-viewport="offset-top: true">
+            <header class="uk-panel uk-panel-box">
                 <h1>Este é <br> um Título</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Fugiat magni distinctio hic quia?
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat magni distinctio hic quia?
                 </p>
                 <button class="uk-button ecoBtn ">Saiba Mais</button>
             </header>
@@ -43,9 +43,9 @@
         </section>
     </header>
 
-    <div class="uk-padding">
+    <div class="uk-padding" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false; delay: 700">
         <section class="uk-container">
-            <header class="uk-text-center  uk-padding">
+            <header class="uk-text-center uk-padding ">
                 <h2 class=" uk-text-uppercase ">Alguns de nossos clientes incríveis</h2>
             </header>
             <div uk-slider="autoplay:true; autoplay-interval: 3000 ">
@@ -91,20 +91,47 @@
         <!-- FIM cliente -->
     </div>
 
-    <div>
-        <article>
-            <div class="uk-container uk-container-small">
-                <header>
-                    <h1>Este é <br> um Título</h1>
+    <div class="services uk-container uk-continer-xlarge ">
+        <article class="uk-flex uk-flex-row uk-flex-wrap ">
+            <div class="shape uk-float-right bgBlue" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
+                <img src="lib/images/machines/digital.png " alt="Impressora Plotter " width="600px ">
+            </div>
+            <div class="uk-align-center ">
+                <header class="uk-text-center uk-text-left@s" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
+                    <h1 class="yellow ">Impressão<br>Digital</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Fugiat magni distinctio hic quia?
                     </p>
-                    <button class="uk-button ecoBtn ">Saiba Mais</button>
+                    <button class="uk-button ecoBtn bgYellow uk-light ">Serviços</button>
                 </header>
             </div>
-            <div class="shape "></div>
+        </article>
+        <article class="uk-margin uk-flex uk-flex-row-reverse uk-flex-wrap ">
+            <div class="shape uk-float-left bgPrimary " uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
+                <img src="lib/images/machines/offset.png " alt="Impressora Offset " width="600px ">
+            </div>
+            <div class="uk-align-center ">
+                <header class="uk-text-center uk-text-right@s " uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
+                    <h1 class="blue ">Impressão<br>Offset</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Fugiat magni distinctio hic quia?
+                    </p>
+                    <button class=" uk-button ecoBtn bgBlue uk-light ">Serviços</button>
+                </header>
+            </div>
+        </article>
+        <article class="uk-margin uk-flex uk-flex-row uk-flex-wrap ">
+            <div class="shape bgYellow uk-flex uk-flex-center " uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
+                <img src="lib/images/machines/flexo.png " alt="Revisora " width="400px ">
+            </div>
+            <div class="uk-align-center ">
+                <header class="uk-text-center uk-text-left@s " uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000; offset: 100">
+                    <h1 class="red ">Impressão<br>Flexográfica</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Fugiat magni distinctio hic quia?
+                    </p>
+                    <button class="uk-button ecoBtn bgRed uk-light ">Serviços</button>
+                </header>
+            </div>
         </article>
     </div>
-
 </body>
 
 </html>
