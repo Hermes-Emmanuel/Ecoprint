@@ -1,8 +1,12 @@
 @import url("root.css");
 @import url("styleQuery.css");
+@import url("uikit.css");
+@import url("uikit-rtl.css");
+
 .section {
     justify-content: space-between;
     align-items: center;
+    min-height: 80vh;
 }
 
 .section header {
@@ -61,9 +65,36 @@ article header h1 {
 
 .shape img {
     padding: 20px;
-    /* transform: translateX(-180px); */
 }
 
 .services article {
     padding: 10px 0;
 }
+
+
+/* SERVICES */
+.about h1 {
+    color: white;
+    font-weight: 700;
+}
+
+.border {
+    margin: 0 auto 10px auto;
+    border-radius: 50px;
+    
+    width: 200px;
+    height: 5px;
+
+    background-color: var(--green-hover);
+}
+
+.about p {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 0.4px;
+
+    color: white;
+}
+
+/* END SERVICES */
