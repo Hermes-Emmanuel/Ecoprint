@@ -2,7 +2,6 @@
 @import url("styleQuery.css");
 @import url("uikit.css");
 @import url("uikit-rtl.css");
-
 .section {
     justify-content: space-between;
     align-items: center;
@@ -71,8 +70,21 @@ article header h1 {
     padding: 10px 0;
 }
 
+.uk-input,
+.uk-textarea {
+    border: none;
+    border-bottom: solid 1.8px;
+}
+
+input:invalid,
+textarea:invalid {
+    color: var(--red);
+    border-color: var(--red);
+}
+
 
 /* SERVICES */
+
 .about h1 {
     color: white;
     font-weight: 700;
@@ -81,10 +93,8 @@ article header h1 {
 .border {
     margin: 0 auto 10px auto;
     border-radius: 50px;
-    
     width: 200px;
     height: 5px;
-
     background-color: var(--green-hover);
 }
 
@@ -93,8 +103,8 @@ article header h1 {
     text-align: center;
     margin: 0 auto;
     letter-spacing: 0.4px;
-
     color: white;
 }
+
 
 /* END SERVICES */

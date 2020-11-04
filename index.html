@@ -7,88 +7,82 @@
     <link rel="stylesheet" href="lib/css/style.css">
     <script src="lib/js/uikit.js"></script>
     <script src="lib/js/uikit-icons.js"></script>
-    <title>Ecoprint</title>
 </head>
 
 <body>
     <header class="uk-container">
         <div class="uk-position-relative">
             <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-logo" href="#"><img src="lib/images/logoEcoprint.svg" alt="Bem Vindo à gráfica Ecoprint"></a>
+                <a class="uk-navbar-item uk-logo" href="#"> <img src="lib/images/logoEcoprint.svg" alt="Bem Vindo à gráfica Ecoprint"> </a>
             </div>
             <div class="uk-position-top">
                 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                     <div class="uk-navbar-right">
                         <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="#">Inicio</a></li>
-                            <li><a href="#">Sobre</a></li>
-                            <li><a href="servicos.html">Serviços</a></li>
-                            <li><a href="#">Contato</a></li>
+                            <li class="uk-active"><a href="#"> Inicio</a></li>
+                            <li><a href="#"> Sobre</a></li>
+                            <li><a href="servicos.html"> Serviços</a></li>
+                            <li><a href="#"> Contato</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </div>
-
-        <section class="section uk-section uk-flex uk-flex-row" >
-            <header class="k-panel uk-panel-box">
-                <h1>Este é <br> um Título</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat magni distinctio hic quia?
-                </p>
+        <section class="section uk-section uk-flex uk-flex-row">
+            <header class="uk-panel uk-panel-box">
+                <h1> Este é <br> um Título</h1>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.Fugiat magni distinctio hic quia ?</p>
                 <button class="uk-button ecoBtn ">Saiba Mais</button>
             </header>
-            <div class="objCircle "></div>
+            <div class="objCircle"></div>
         </section>
     </header>
-
-    <div class="uk-padding" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false; delay: 700">
-        <section class="uk-container">
-            <header class="uk-text-center uk-padding ">
-                <h2 class=" uk-text-uppercase ">Alguns de nossos clientes incríveis</h2>
-            </header>
-            <div uk-slider="autoplay:true; autoplay-interval: 3000 ">
-                <ul class="uk-slider-items uk-child-width-1-5@s uk-child-width-1-3 uk-grid-small " uk-grid>
-                    <li>
-                        <div>
-                            <img src="lib/images/customer/farmace.png " alt="Farmace ">
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="lib/images/customer/sabao-jua.png " alt="Sabão Jua ">
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="lib/images/customer/unimed.png " alt="Unimed ">
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="lib/images/customer/vicente lemos.png " alt="Vicente Lemos ">
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="lib/images/customer/clinica de olhos.png " alt="Cclinica de olhos ">
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="lib/images/customer/clinimagem.png " alt="Clinimagem ">
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="lib/images/customer/cajuina.png " alt="Cajuina São Geraldo ">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- FIM cliente -->
-    </div>
-
+    <div class="uk-padding"></div>
+    <section class="uk-container">
+        <header class="uk-text-center uk-padding " uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false; delay: 700; offset: 1303">
+            <h2 class=" uk-text-uppercase"> Alguns de nossos clientes incríveis</h2>
+        </header>
+        <div uk-slider="autoplay:true; autoplay-interval: 3000 " uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 700">
+            <ul class="uk-slider-items uk-child-width-1-5@s uk-child-width-1-3 uk-grid-small " uk-grid>
+                <li>
+                    <div>
+                        <img src="lib/images/customer/farmace.png " alt="Farmace ">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="lib/images/customer/sabao-jua.png " alt="Sabão Jua">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="lib/images/customer/unimed.png " alt="Unimed">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="lib/images/customer/vicente lemos.png " alt="Vicente Lemos ">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="lib/images/customer/clinica de olhos.png " alt="Cclinica de olhos ">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="lib/images/customer/clinimagem.png " alt="Clinimagem ">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="lib/images/customer/cajuina.png " alt="Cajuina São Geraldo ">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- FIM cliente -->
     <div class="services uk-container uk-continer-xlarge ">
         <article class="uk-flex uk-flex-row uk-flex-wrap ">
             <div class="shape uk-float-right bgBlue" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
@@ -96,40 +90,73 @@
             </div>
             <div class="uk-align-center ">
                 <header class="uk-text-center uk-text-left@s" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
-                    <h1 class="yellow ">Impressão<br>Digital</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Fugiat magni distinctio hic quia?
-                    </p>
-                    <a href="servicos.html"><button class="uk-button ecoBtn bgYellow uk-light ">Serviços</button></a>
+                    <h1 class="yellow "> Impressão<br> Digital </h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur<br> adipisicing elit.Fugiat magni distinctio hic quia ?</p>
+                    <a href="servicos.html">
+                        <button class="uk-button ecoBtn bgYellow uk-light "> Serviços </button>
+                    </a>
                 </header>
             </div>
         </article>
         <article class="uk-margin uk-flex uk-flex-row-reverse uk-flex-wrap ">
-            <div class="shape uk-float-left bgPrimary " uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
+            <div class="shape uk-float-left bgPrimary" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
                 <img src="lib/images/machines/offset.png " alt="Impressora Offset " width="600px ">
             </div>
             <div class="uk-align-center ">
                 <header class="uk-text-center uk-text-right@s " uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
-                    <h1 class="blue ">Impressão<br>Offset</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Fugiat magni distinctio hic quia?
+                    <h1 class="blue "> Impressão<br>Offset</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur<br> adipisicing elit.Fugiat magni distinctio hic quia ?
                     </p>
-                    <a href="servicos.html"><button class=" uk-button ecoBtn bgBlue uk-light ">Serviços</button></a>
+                    <a href="servicos.html">
+                        <button class=" uk-button ecoBtn bgBlue uk-light ">Serviços</button>
+                    </a>
                 </header>
             </div>
         </article>
         <article class="uk-margin uk-flex uk-flex-row uk-flex-wrap ">
-            <div class="shape bgYellow uk-flex uk-flex-center " uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
+            <div class="shape bgYellow uk-flex uk-flex-center " uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1200">
                 <img src="lib/images/machines/flexo.png " alt="Revisora " width="400px ">
             </div>
             <div class="uk-align-center ">
-                <header class="uk-text-center uk-text-left@s " uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000; offset: 100">
-                    <h1 class="red ">Impressão<br>Flexográfica</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Fugiat magni distinctio hic quia?
+                <header class="uk-text-center uk-text-left@s " uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1200">
+                    <h1 class="red ">Impressão<br> Flexográfica</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur<br> adipisicing elit.Fugiat magni distinctio hic quia ?
                     </p>
-                    <a href="servicos.html"><button class="uk-button ecoBtn bgRed uk-light ">Serviços</button></a>
+                    <a href="servicos.html">
+                        <button class="uk-button ecoBtn bgRed uk-light ">
+                            Serviços
+                        </button>
+                    </a>
                 </header>
             </div>
         </article>
     </div>
+    <section class="uk-container uk-continer-xlarge uk-margin-xlarge-top uk-margin-xlarge-bottom uk-flex ">
+        <div class="form uk-margin-right ">
+            <form action=" " method="post " class="uk-grid-small " uk-grid>
+                <div class="uk-width-1-2@s ">
+                    <input class="uk-input " type="text " placeholder="Nome * " required>
+                </div>
+                <div class="uk-width-1-2@s ">
+                    <input class="uk-input " type="text " placeholder="Sobrenome * " required>
+                </div>
+                <div class="uk-width-1-1@s ">
+                    <input class="uk-input " type="email " placeholder="e-mail * " required>
+                </div>
+                <div>
+                    <textarea class="uk-textarea " cols="70 " rows="5 " placeholder="Mensagem " required style="resize: none "></textarea>
+                </div>
+                <div>
+                    <button class="uk-button ecoBtn bgPrimary uk-light ">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="info uk-width-responsive uk-margin-left ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Libero, veritatis molestias amet, dolorum nobis quae possimus dicta esse tenetur recusandae enim, incidunt repellat explicabo optio maxime voluptas soluta nisi natus.
+        </div>
+    </section>
 </body>
 
 </html>
