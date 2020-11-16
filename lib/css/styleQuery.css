@@ -1,5 +1,5 @@
-@media screen and (max-width: 500px) {
-    .uk-navbar-right {
+@media screen and (max-width: 1080px) {
+    .nav{
         display: none;
     }
     .objCircle {
@@ -26,7 +26,16 @@
     .shape img {
         padding: 10px;
     }
+
     .services {
         margin: auto;
+    }
+    .section2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section2 button{
+        display: none;
     }
 }

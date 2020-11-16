@@ -10,12 +10,13 @@
 </head>
 
 <body>
-    <header class="uk-container">
+    <header class="uk-container" id="top">
         <div class="uk-position-relative">
             <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-logo" href="#"> <img src="lib/images/logoEcoprint.svg" alt="Bem Vindo à gráfica Ecoprint"> </a>
+                <a class="uk-navbar-item uk-logo" href="#"> <img src="lib/images/logoEcoprint.svg"
+                        alt="Bem Vindo à gráfica Ecoprint"> </a>
             </div>
-            <div class="uk-position-top">
+            <div class="uk-position-top uk-visible@m">
                 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                     <div class="uk-navbar-right">
                         <ul class="uk-navbar-nav">
@@ -27,56 +28,79 @@
                     </div>
                 </nav>
             </div>
+            <nav class="uk-navbar uk-position-top uk-hidden@m">
+                <div class="uk-navbar-right ">
+                    <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary"></a>
+                </div>
+            </nav>
+            <!-- offcanva -->
+
+            <div id="offcanvas-nav-primary" uk-offcanvas="mode: reveal">
+                <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                        <li><a href="#">Incio</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end offcanva -->
         </div>
+
         <section class="section uk-section uk-flex uk-flex-row">
             <header class="uk-panel uk-panel-box">
-                <h1> Este é <br> um Título</h1>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.Fugiat magni distinctio hic quia ?</p>
-                <button class="uk-button ecoBtn ">Saiba Mais</button>
+                <h1> O Cariri precisava de<br> uma gráfica assim</h1>
+                <p> Através de uma necessidade, nasce uma oportunidade e uma grande história, a história de uma das
+                    maiores empresas gráficas do Ceará: Gráfica Ecoprint</p>
+                <button class="uk-button ecoBtn">Saiba Mais</button>
             </header>
             <div class="objCircle"></div>
         </section>
     </header>
     <div class="uk-padding"></div>
-    <section class="uk-container">
-        <header class="uk-text-center uk-padding " uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false; delay: 700; offset: 1303">
-            <h2 class=" uk-text-uppercase"> Alguns de nossos clientes incríveis</h2>
+    <section class="uk-container uk-container-large">
+        <header class="uk-text-center uk-padding "
+            uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false; delay: 700; offset: 1303">
+            <h2 class="uk-text-uppercase">Alguns de nossos clientes incríveis</h2>
         </header>
-        <div uk-slider="autoplay:true; autoplay-interval: 3000 " uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 700">
-            <ul class="uk-slider-items uk-child-width-1-5@s uk-child-width-1-3 uk-grid-small " uk-grid>
+        <div uk-slider="autoplay:true; autoplay-interval: 2500 "
+            uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 700">
+            <ul class="uk-slider-items uk-child-width-1-6@s uk-child-width-1-3 uk-grid-small " uk-grid>
                 <li>
                     <div>
-                        <img src="lib/images/customer/farmace.png " alt="Farmace ">
+                        <img src="lib/images/customer/farmace.png " alt="Farmace " width="130px">
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="lib/images/customer/sabao-jua.png " alt="Sabão Jua">
+                        <img src="lib/images/customer/sabao-jua.png " alt="Sabão Jua" width="130px">
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="lib/images/customer/unimed.png " alt="Unimed">
+                        <img src="lib/images/customer/unimed.png " alt="Unimed" width="130px">
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="lib/images/customer/vicente lemos.png " alt="Vicente Lemos ">
+                        <img src="lib/images/customer/vicente lemos.png " alt="Vicente Lemos " width="130px">
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="lib/images/customer/clinica de olhos.png " alt="Cclinica de olhos ">
+                        <img src="lib/images/customer/clinica de olhos.png " alt="Cclinica de olhos " width="130px">
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="lib/images/customer/clinimagem.png " alt="Clinimagem ">
+                        <img src="lib/images/customer/clinimagem.png " alt="Clinimagem " width="130px">
                     </div>
                 </li>
                 <li>
                     <div>
-                        <img src="lib/images/customer/cajuina.png " alt="Cajuina São Geraldo ">
+                        <img src="lib/images/customer/cajuina.png " alt="Cajuina São Geraldo " width="130px">
                     </div>
                 </li>
             </ul>
@@ -84,14 +108,17 @@
     </section>
     <!-- FIM cliente -->
     <div class="services uk-container uk-continer-xlarge ">
-        <article class="uk-flex uk-flex-row uk-flex-wrap ">
-            <div class="shape uk-float-right bgBlue" uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
-                <img src="lib/images/machines/digital.png " alt="Impressora Plotter " width="600px ">
+        <article class="uk-flex uk-flex-row uk-flex-wrap uk-flex-wrap-stretch">
+            <div class="shape uk-float-right bgBlue uk-align-center"
+                uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
+                <img src="lib/images/machines/digital.png " alt="Impressora Plotter " max-width="600px ">
             </div>
             <div class="uk-align-center ">
-                <header class="uk-text-center uk-text-left@s" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
-                    <h1 class="yellow "> Impressão<br> Digital </h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur<br> adipisicing elit.Fugiat magni distinctio hic quia ?</p>
+                <header class="uk-text-center uk-text-left@m"
+                    uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
+                    <h1 class="yellow "> Comunicação<br> Visual </h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur<br> adipisicing elit.Fugiat magni distinctio hic quia ?
+                    </p>
                     <a href="servicos.html">
                         <button class="uk-button ecoBtn bgYellow uk-light "> Serviços </button>
                     </a>
@@ -99,11 +126,13 @@
             </div>
         </article>
         <article class="uk-margin uk-flex uk-flex-row-reverse uk-flex-wrap ">
-            <div class="shape uk-float-left bgPrimary" uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
-                <img src="lib/images/machines/offset.png " alt="Impressora Offset " width="600px ">
+            <div class="shape uk-float-left bgPrimary uk-align-center"
+                uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
+                <img src="lib/images/machines/offset.png " alt="Impressora Offset" width="600px ">
             </div>
             <div class="uk-align-center ">
-                <header class="uk-text-center uk-text-right@s " uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
+                <header class="uk-text-center uk-text-right@m "
+                    uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
                     <h1 class="blue "> Impressão<br>Offset</h1>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur<br> adipisicing elit.Fugiat magni distinctio hic quia ?
@@ -115,12 +144,14 @@
             </div>
         </article>
         <article class="uk-margin uk-flex uk-flex-row uk-flex-wrap ">
-            <div class="shape bgYellow uk-flex uk-flex-center " uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1200">
+            <div class="shape bgYellow uk-flex uk-flex-center uk-float-right uk-align-center"
+                uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
                 <img src="lib/images/machines/flexo.png " alt="Revisora " width="400px ">
             </div>
             <div class="uk-align-center ">
-                <header class="uk-text-center uk-text-left@s " uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1200">
-                    <h1 class="red ">Impressão<br> Flexográfica</h1>
+                <header class="uk-text-center uk-text-left@m "
+                    uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
+                    <h1 class="red">Impressão<br> Flexográfica</h1>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur<br> adipisicing elit.Fugiat magni distinctio hic quia ?
                     </p>
@@ -133,8 +164,13 @@
             </div>
         </article>
     </div>
-    <section class="uk-container uk-continer-xlarge uk-margin-xlarge-top uk-margin-xlarge-bottom uk-flex ">
-        <div class="form uk-margin-right ">
+    <section class="uk-container contact">
+        <div class="section2 uk-float-left">
+            <h2> Não hesite de entrar em
+                contato conosco para qualquer informação. </h2>
+            <p>Contate-nos<br><span>88 3571.5027 | 3571.1085</span></p>
+        </div>
+        <div class="form uk-align-center">
             <form action=" " method="post " class="uk-grid-small " uk-grid>
                 <div class="uk-width-1-2@s ">
                     <input class="uk-input " type="text " placeholder="Nome * " required>
@@ -146,17 +182,24 @@
                     <input class="uk-input " type="email " placeholder="e-mail * " required>
                 </div>
                 <div>
-                    <textarea class="uk-textarea " cols="70 " rows="5 " placeholder="Mensagem " required style="resize: none "></textarea>
+                    <textarea class="uk-textarea " cols="70 " rows="5 " placeholder="Mensagem " required
+                        style="resize: none"></textarea>
                 </div>
                 <div>
                     <button class="uk-button ecoBtn bgPrimary uk-light ">Enviar</button>
                 </div>
             </form>
         </div>
-        <div class="info uk-width-responsive uk-margin-left ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.Libero, veritatis molestias amet, dolorum nobis quae possimus dicta esse tenetur recusandae enim, incidunt repellat explicabo optio maxime voluptas soluta nisi natus.
-        </div>
     </section>
+    <footer class="uk-paddiing-large uk-margin uk-height-small ">
+
+        <a class="logo" href="#top" uk-scroll><img src="lib/images/logoEcoprint.svg" alt="Bem Vindo à gráfica Ecoprint"
+                width="120px"></a>
+
+        <p>© 2008 - 2020, Ecoprint todos os direitos reservados<br>
+            CNPJ: 09.521.937/0001-87</p>
+        <div>Orgulhosamente desenvolvido por Hermes Emmanuel e Pedro Lucas</div>
+    </footer>
 </body>
 
 </html>

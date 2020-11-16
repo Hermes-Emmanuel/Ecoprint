@@ -14,15 +14,15 @@
 }
 
 .section header h1 {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 800;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .section header p {
     font-size: .9em;
     font-weight: 300;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .ecoBtn {
@@ -40,6 +40,16 @@
 .uk-text-center h2 {
     font-size: 1.4em;
     font-weight: 600;
+}
+
+.uk-slider-items li div img{
+    filter: grayscale(100%);
+    transition: 0.7;
+}
+
+.uk-slider-items li div img:hover{
+    filter: grayscale(0%);
+    transition: 0.7;
 }
 
 article {
@@ -84,6 +94,9 @@ textarea:invalid {
 
 
 /* SERVICES */
+.services{
+    margin-top: 60px;
+}
 
 .about h1 {
     color: white;
@@ -108,3 +121,61 @@ textarea:invalid {
 
 
 /* END SERVICES */
+
+/* CONTACT*/
+.contact{
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form {
+    min-width: 250px;
+    max-width: 600px;
+}
+.section2 {
+    min-width: 250px;
+    width:  400px;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.section2 h2 {
+    /* font-size: 3em; */
+    font-weight: 700;
+    line-height: 1;
+}
+
+.section2 p {
+    font-size: .9em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section2 p span{
+    font-size: large;
+    font-weight:700;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer .logo{
+    max-width: 130px;
+    filter: grayscale(100%);
+    transition: 0.7;
+}
+
+footer .logo:hover{
+    filter: grayscale(0);
+    transition: 0.7;
+}
+/*END CONTACT*/
