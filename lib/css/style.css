@@ -2,6 +2,11 @@
 @import url("styleQuery.css");
 @import url("uikit.css");
 @import url("uikit-rtl.css");
+
+.nav ul li a:active{
+    border-bottom: 3px solid red;
+}
+
 .section {
     justify-content: space-between;
     align-items: center;
@@ -162,7 +167,7 @@ textarea:invalid {
 footer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     font-size: 0.8em;
     text-align: center;
@@ -177,5 +182,9 @@ footer .logo{
 footer .logo:hover{
     filter: grayscale(0);
     transition: 0.7;
+}
+
+.uk-card-default{
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
 /*END CONTACT*/

@@ -5583,11 +5583,13 @@ ul.uk-nav-sub {
 .uk-subnav-pill > * > a:active {
   background-color: #f8f8f8;
   color: #666;
+  
 }
 /* Active */
 .uk-subnav-pill > .uk-active > a {
   background-color: #1e87f0;
   color: #fff;
+  
 }
 /* Disabled
  * The same for all style modifiers
@@ -11833,6 +11835,8 @@ iframe.uk-cover {
 .uk-offcanvas-bar .uk-subnav-pill > * > :first-child {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.5);
+  
+  
 }
 .uk-light .uk-subnav-pill > * > a:hover,
 .uk-light .uk-subnav-pill > * > a:focus,
@@ -11886,6 +11890,7 @@ iframe.uk-cover {
 .uk-offcanvas-bar .uk-subnav-pill > .uk-active > a {
   background-color: #fff;
   color: #666;
+  
 }
 .uk-light .uk-subnav > .uk-disabled > a,
 .uk-section-primary:not(.uk-preserve-color) .uk-subnav > .uk-disabled > a,
