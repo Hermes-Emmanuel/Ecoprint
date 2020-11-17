@@ -1,13 +1,31 @@
+@media screen and (min-width: 1310px) {
+    .shapeheader{
+        transform: translateX(40px)!important;
+    }
+    .section header {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 1430px) {
+    .shapeheader{
+        transform: translateX(100px)!important;
+    }
+    .section header {
+        margin-left: 20px;
+    }
+}
 @media screen and (max-width: 1080px) {
     .nav{
         display: none;
-    }
+    }    
     .objCircle {
         display: none;
     }
     .section {
         justify-content: center!important;
         align-items: center;
+        
     }
     .section header {
         text-align: center;
@@ -23,6 +41,16 @@
     }
     .shape img {
         padding: 10px;
+    }
+
+    .shapeheader{
+        width: 100vw!important;
+        border-radius: 0!important;
+        transform: translateX(0px)!important;
+    }
+
+    .halftone{
+        display: none;
     }
 
     .services {
