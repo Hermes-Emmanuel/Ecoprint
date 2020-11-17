@@ -73,22 +73,22 @@
                 <p>Contate-nos<br><span>88 3571.5027 | 3571.1085</span></p>
             </div>
             <div class="form uk-align-center">
-                <form action=" " method="post " class="uk-grid-small " uk-grid>
+                <form  action="sendEmail.php" method="post " name="form" class="uk-grid-small " uk-grid>
                     <div class="uk-width-1-2@s ">
-                        <input class="uk-input " type="text " placeholder="Nome * " required>
+                        <input class="uk-input " type="text " name="nome" placeholder="Nome * " required>
                     </div>
                     <div class="uk-width-1-2@s ">
-                        <input class="uk-input " type="text " placeholder="Sobrenome * " required>
+                        <input class="uk-input " type="text "name="sobrenome" placeholder="Sobrenome * " required>
                     </div>
                     <div class="uk-width-1-1@s ">
-                        <input class="uk-input " type="email " placeholder="e-mail * " required>
+                        <input class="uk-input " type="email "name="email" placeholder="e-mail * " required>
                     </div>
                     <div>
-                        <textarea class="uk-textarea " cols="70 " rows="5 " placeholder="Mensagem " required
+                        <textarea class="uk-textarea " cols="70 " rows="5 "  name="mensagem" placeholder="Mensagem " required
                             style="resize: none"></textarea>
                     </div>
                     <div>
-                        <button class="uk-button ecoBtn bgPrimary uk-light ">Enviar</button>
+                        <input type="submit" class="uk-button ecoBtn bgPrimary uk-light ">Enviar</input>
                     </div>
                 </form>
             </div>
