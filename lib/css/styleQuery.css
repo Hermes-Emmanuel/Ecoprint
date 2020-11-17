@@ -10,8 +10,6 @@
         align-items: center;
     }
     .section header {
-        min-width: 400px;
-        max-width: 400px;
         text-align: center;
     }
     .section header h1 {
@@ -33,9 +31,15 @@
     .section2 {
         width: 100%;
         text-align: center;
+        margin-left: 0px;
     }
 
     .section2 button{
         display: none;
     }
+
+    .filter{
+        max-width: 325px;
+    }
+
 }
