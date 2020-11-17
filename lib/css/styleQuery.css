@@ -14,6 +14,7 @@
     .section header {
         margin-left: 20px;
     }
+
 }
 @media screen and (max-width: 1080px) {
     .nav{
@@ -29,6 +30,7 @@
     }
     .section header {
         text-align: center;
+        margin-left: 0;
     }
     .section header h1 {
         font-size: 3em;
@@ -66,8 +68,5 @@
         display: none;
     }
 
-    .filter{
-        
-    }
 
 }
