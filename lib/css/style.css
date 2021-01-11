@@ -7,7 +7,7 @@
 .section {
     justify-content: space-between;
     align-items: center;
-    min-height: 80vh;
+    min-height: 65vh;
 }
 
 .section header {
@@ -18,12 +18,14 @@
 .section header h1 {
     font-size: 2em;
     font-weight: 800;
+    color: white;
     /* text-transform: uppercase; */
 }
 
 .section header p {
     font-size: 1em;
     font-weight: 300;
+    color: white;
     /* text-transform: uppercase; */
 }
 
@@ -32,27 +34,18 @@
     border: 2px solid;
 }
 
-.objCircle {
-    background-image: url("../images/about/Eco3.JPG");
+.shapeheaderr{
+    background-image: url("../images/about/Eco6.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 500px;
-    height: 600px;
-    border-radius: 0 30px 30px 0;
-    transform: translateY(80px);
-    z-index: 10;
-}
-
-.shapeheader{
     z-index: -2;
-    width: 93.9vw;
-    height: 80vh;
-    background: rgb(20, 29, 37);
-    border-radius: 30px 0 0 30px;
-    top: 0;
-    right: 0;
-    transform: translateX(40px);
+    /* width: 100vw; */
+    height: 75vh;
+    /* border-radius: 30px 0 0 30px; */
+    /* top: 0; */
+    /* right: 0; */
+    /* transform: translateX(40px); */
 }
 
 .halftone{
