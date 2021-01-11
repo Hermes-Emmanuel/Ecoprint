@@ -21,10 +21,10 @@
                 <nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
                     <div class="uk-navbar-right">
                         <ul class="uk-navbar-nav">
-                            <li><a href="index.html"> Inicio</a></li>
+                            <li class="uk-active"><a href="index.html"> Inicio</a></li>
                             <li><a href="sobre.html"> Sobre</a></li>
                             <li><a href="servicos.html"> Serviços</a></li>
-                            <li class="uk-active"><a href="contato.html"> Contato</a></li>
+                            <li><a href="contato.html"> Contato</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -49,21 +49,17 @@
             </div>
             <!-- end offcanva -->
         </div>
-        <div class="shapeheader uk-position-top"></div>
+        <div class="shapeheaderr uk-position-top"></div>
         <section class="section uk-section uk-flex uk-flex-row">
             <header class="uk-panel uk-panel-box ">
                 <h1 class="uk-light"> O Cariri precisava de<br> uma gráfica assim</h1>
                 <p class="uk-light"> Através de uma necessidade, nasce uma oportunidade e uma grande história, a
                     história de uma das
                     maiores empresas gráficas do Ceará: Gráfica Ecoprint</p>
-                <button class="uk-button ecoBtn">Saiba Mais</button>
+                    <a href="sobre.html">
+                        <button class="uk-button ecoBtn">Saiba Mais</button>
+                    </a>        
             </header>
-            <div class="objCircle">
-
-            </div>
-            <div class="halftone">
-                <img src="lib/images/about/halftone.svg" alt="halftone" sizes="300px">
-            </div>
 
         </section>
 
@@ -120,9 +116,15 @@
     <div class="services uk-container uk-continer-xlarge ">
         <article class="uk-flex uk-flex-row uk-flex-wrap ">
             <div class="shape bgBlue uk-align-center"
+                uk-parallax="background-color: #703CDA,#5F27CD; border-color: #00f,#f00; viewport: 0.5"
                 uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
                 <img src="lib/images/machines/digital.png " alt="Impressora Plotter " max-width="600px ">
             </div>
+            <!-- <div id="test-color" class="test-color uk-height-large uk-overflow-hidden uk-flex uk-flex-top" uk-parallax="background-color: yellow,white; border-color: #00f,#f00; viewport: 0.5" style="border: 10px solid #000;">
+
+                <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" uk-parallax="target: #test-target; color: #0f0; viewport: 0.5">Headline</h1>
+            
+            </div> -->
             <div class="uk-align-center ">
                 <header class="uk-text-center uk-text-left@m"
                     uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
@@ -137,6 +139,7 @@
         </article>
         <article class="uk-margin uk-flex uk-flex-row-reverse uk-flex-wrap ">
             <div class="shape bgPrimary uk-align-center"
+                uk-parallax="background-color: #4AE6BC,#1DD1A1; border-color: #00f,#f00; viewport: 0.5"
                 uk-scrollspy="cls: uk-animation-slide-right; repeat: false; delay: 1000">
                 <img src="lib/images/machines/offset.png " alt="Impressora Offset" width="600px ">
             </div>
@@ -154,8 +157,8 @@
             </div>
         </article>
         <article class="uk-margin uk-flex uk-flex-row uk-flex-wrap ">
-            <div class="shape bgYellow uk-flex uk-flex-center uk-align-center"
-                uk-scrollspy="cls: uk-animation-slide-left; repeat: false; delay: 1000">
+            <div class="shape bgYellow uk-flex uk-flex-center uk-align-center" uk-parallax="background-color: #FFDC91,#FECA57; border-color: #00f,#f00; viewport: 0.5
+                uk-scrollspy=" cls: uk-animation-slide-left; repeat: false; delay: 1000">
                 <img src="lib/images/machines/flexo.png " alt="Revisora " width="400px ">
             </div>
             <div class="uk-align-center ">
@@ -182,15 +185,18 @@
                 <p>Contate-nos<br><span>88 3571.5027 | 3571.1085</span></p>
             </div>
             <div class="form uk-align-center">
-                <form action="sendEmail.php" method="post " name="form" class="uk-grid-small " uk-grid>
+                <form action="./sendEmail.php" method="POST" name="form" class="uk-grid-small " uk-grid>
                     <div class="uk-width-1-2@s ">
                         <input class="uk-input " type="text " name="nome" placeholder="Nome * " required>
                     </div>
                     <div class="uk-width-1-2@s ">
                         <input class="uk-input " type="text " name="sobrenome" placeholder="Sobrenome * " required>
                     </div>
-                    <div class="uk-width-1-1@s ">
-                        <input class="uk-input " type="email " name="email" placeholder="e-mail * " required>
+                    <div class="uk-width-1-2@s ">
+                        <input class="uk-input " type="email " name="email" placeholder="E-mail * " required>
+                    </div>
+                    <div class="uk-width-1-2@s ">
+                        <input class="uk-input " type="empresa " name="empresa" placeholder="Empresa">
                     </div>
                     <div>
                         <textarea class="uk-textarea " cols="70 " rows="5 " name="mensagem" placeholder="Mensagem "

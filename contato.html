@@ -73,22 +73,25 @@
                 <p>Contate-nos<br><span>88 3571.5027 | 3571.1085</span></p>
             </div>
             <div class="form uk-align-center">
-                <form  action="sendEmail.php" method="post " name="form" class="uk-grid-small " uk-grid>
+                <form action="./sendEmail.php" method="POST" name="form" class="uk-grid-small " uk-grid>
                     <div class="uk-width-1-2@s ">
                         <input class="uk-input " type="text " name="nome" placeholder="Nome * " required>
                     </div>
                     <div class="uk-width-1-2@s ">
-                        <input class="uk-input " type="text "name="sobrenome" placeholder="Sobrenome * " required>
+                        <input class="uk-input " type="text " name="sobrenome" placeholder="Sobrenome * " required>
                     </div>
-                    <div class="uk-width-1-1@s ">
-                        <input class="uk-input " type="email "name="email" placeholder="e-mail * " required>
+                    <div class="uk-width-1-2@s ">
+                        <input class="uk-input " type="email " name="email" placeholder="E-mail * " required>
+                    </div>
+                    <div class="uk-width-1-2@s ">
+                        <input class="uk-input " type="empresa " name="empresa" placeholder="Empresa">
                     </div>
                     <div>
-                        <textarea class="uk-textarea " cols="70 " rows="5 "  name="mensagem" placeholder="Mensagem " required
-                            style="resize: none"></textarea>
+                        <textarea class="uk-textarea " cols="70 " rows="5 " name="mensagem" placeholder="Mensagem "
+                            required style="resize: none"></textarea>
                     </div>
                     <div>
-                        <input type="submit" class="uk-button ecoBtn bgPrimary uk-light ">Enviar</input>
+                        <input type="submit" class="uk-button ecoBtn bgPrimary uk-light "></input>
                     </div>
                 </form>
             </div>
@@ -97,14 +100,16 @@
     <footer class="uk-paddiing-large uk-margin uk-height-medium">
         <div>
             <a class="logo" href="#top" uk-scroll><img src="lib/images/logoEcoprint.svg"
-                alt="Bem Vindo à gráfica Ecoprint" width="150px"></a>
+                    alt="Bem Vindo à gráfica Ecoprint" width="150px"></a>
         </div>
         <div>
-            <a href="https://pt-br.facebook.com/graficaecoprint/" target="_blank" class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook; ratio: 2"></a>
-            <a href="https://www.instagram.com/grafica.ecoprint/" target="_blank" class="uk-icon-button" uk-icon="icon: instagram; ratio: 2"></a>
+            <a href="https://pt-br.facebook.com/graficaecoprint/" target="_blank"
+                class="uk-icon-button  uk-margin-small-right" uk-icon="icon: facebook; ratio: 2"></a>
+            <a href="https://www.instagram.com/grafica.ecoprint/" target="_blank" class="uk-icon-button"
+                uk-icon="icon: instagram; ratio: 2"></a>
         </div>
         <div>
-            
+
 
             <p>© 2009 - 2020, Ecoprint todos os direitos reservados<br>
                 CNPJ: 09.521.937/0001-87</p>
